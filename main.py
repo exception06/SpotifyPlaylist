@@ -29,7 +29,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope,
                                                 client_secret=CLIENT_SECRET,
                                                 redirect_uri=CLIENT_URI,
                                                 show_dialog=True,
-                                                cache_path="project23aa/token.txt",
+                                                cache_path="SpotifyPlaylist/token.txt",
                                                 ))
 
 # To get the info related to the user
@@ -61,7 +61,7 @@ for song in songs:
         print(f"{song} doesn't exist in Spotify. Skipped.")
 
 # Playlist in the form of csv
-with open("project23aa/playlist.csv",  mode="w", newline="") as file:
+with open("SpotifyPlaylist/playlist.csv",  mode="w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["name", "artist", "album", "release", "minutes", "seconds", "link"])
     writer.writerows(playlist_data)
