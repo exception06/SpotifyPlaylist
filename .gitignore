@@ -1,25 +1,12 @@
-# 🔐 Sensitive files
+# Sensitive files
 .env
 token.txt
 
-# 🐍 Python cache
-__pycache__/
-*.py[cod]
-*.pyo
-
-# 📦 Virtual environments
+# Virtual environments
 venv/
 env/
 *.egg-info/
 
-# 📄 Logs and temp files
+# Logs and temp files
 *.log
 *.tmp
-
-# 💻 OS-specific files
-.DS_Store
-Thumbs.db
-
-# 📦 IDE/editor configs (optional)
-.vscode/
-.idea/
